@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Mergeti</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                     <h1 class="custom-logo m-0">
+                  <img src="img/Merge.png" alt="Logo" class="img-fluid logo-merge">
+                 </h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre</a>
+                        <a href="service.html" class="nav-item nav-link  active">Serviços</a>
+                        <a href="contact.html" class="nav-item nav-link">Contato</a>
+                                        
+                    </div>  
+
+                </div>
+            </nav>
+
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Nossos Serviços</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Sobre</a></li>
+                        <li class="breadcrumb-item active text-primary">Serviços</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Services Start -->
+        <div class="container-fluid service pb-2">
+            <div class="container pb-0">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Nossos Serviços</h4>
+                    <h1 class="display-5 mb-4">Como podemos te ajudar</h1>
+                    <p class="mb-0">Oferecemos uma variedade de serviços para atender às suas necessidades. Confira abaixo alguns dos serviços que disponibilizamos:</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Serviço 1 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/rpa.png" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">RPA é uma tecnologia que utiliza “bots” para automatizar tarefas.</a>
+                                <p class="mb-4">Esses bots podem executar diversas atividades, desde o processamento de dados até a gestão de interações com clientes.</p>
+                                <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#rpaModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Serviço 2 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/financeiro.png" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Faça um orçamento</a>
+                                <p class="mb-4">Juntos somos mais fortes, podemos transformar a vida de sua empresa para melhor.</p>
+                                <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#financeModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Serviço 3 -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/horizonte.png" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Descubra a Merge e AMPLIE seus horizontes!</a>
+                                <p class="mb-4">A Merge não apenas abre portas, mas também amplia nossos horizontes de maneiras inesperadas.</p>
+                                <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#ksModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modals -->
+        <!-- Modal 1 -->
+        <div class="modal fade" id="rpaModal" tabindex="-1" aria-labelledby="rpaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rpaModalLabel">Mais sobre RPA</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Automação Robótica de Processos (RPA) é uma tecnologia que utiliza bots para automatizar tarefas repetitivas e baseadas em regras, economizando tempo e reduzindo erros humanos. Esses bots podem executar uma ampla variedade de atividades, desde o processamento de dados até a gestão de interações com clientes.
+
+                            Benefícios da RPA:
+                            Eficiência: A automação de tarefas rotineiras permite que os funcionários se concentrem em atividades mais estratégicas e de maior valor.
+                            
+                            Precisão: Bots reduzem a probabilidade de erros humanos, garantindo maior precisão nas operações.
+                            
+                            Escalabilidade: Processos automatizados podem ser facilmente escalados para atender a demandas crescentes sem a necessidade de aumentar a equipe.
+                            
+                            Economia de Tempo: Tarefas que antes levavam horas podem ser concluídas em minutos, aumentando a produtividade geral.
+                            
+                            Exemplos de Aplicações:
+                            Financeiro: Automação de processos de contas a pagar e a receber, reconciliação bancária e geração de relatórios financeiros.
+                            
+                            Recursos Humanos: Gestão de folha de pagamento, recrutamento e integração de novos funcionários.
+                            
+                            Atendimento ao Cliente: Respostas automáticas a consultas comuns, processamento de pedidos e gestão de devoluções.
+                            
+                            TI: Monitoramento de sistemas, gestão de tickets de suporte e automação de backups.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal 2 -->
+        <div class="modal fade" id="financeModal" tabindex="-1" aria-labelledby="financeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="financeModalLabel">Faça um Orçamento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 style="margin-left: 20px; margin-right: 20px;">Faça um Orçamento</h3> <p style="margin-left: 20px; margin-right: 20px;">Juntos somos mais fortes, podemos transformar a vida de sua empresa para melhor. Nossa equipe está pronta para oferecer soluções personalizadas que atendam às suas necessidades específicas. Entre em contato conosco para discutir como podemos ajudar a otimizar seus processos, reduzir custos e impulsionar o crescimento do seu negócio.</p> <p style="margin-left: 20px; margin-right: 20px;">Com nossa experiência e expertise, garantimos um serviço de alta qualidade que trará resultados significativos para sua empresa. Não perca a oportunidade de fazer um orçamento e descobrir como podemos colaborar para o seu sucesso.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        <a href="#" class="btn btn-primary">Entrar em Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal 3 -->
+        <div class="modal fade" id="ksModal" tabindex="-1" aria-labelledby="ksModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ksModalLabel">Descubra a Merge</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>                   
+                    <div class="modal-body">
+                        <h3 style="margin-left: 20px; margin-right: 20px;">Descubra a Merge e AMPLIE seus horizontes!</h3> <p style="margin-left: 20px; margin-right: 20px;">A Merge não apenas abre portas, mas também amplia nossos horizontes de maneiras inesperadas. Com uma abordagem inovadora e soluções personalizadas, a Merge transforma desafios em oportunidades, permitindo que você explore novas possibilidades e alcance seu verdadeiro potencial.</p> <p style="margin-left: 20px; margin-right: 20px;">Nossa equipe de especialistas está comprometida em oferecer suporte contínuo e consultoria estratégica para garantir que sua empresa esteja sempre à frente. Descubra como a Merge pode ajudar a expandir seus horizontes e levar seu negócio a novos patamares.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid service pb-4">
+            <div class="container pb-4">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">                    
+                    <h1 class="display-5 mb-4">Por que optar por uma consultoria especializada</h1>                
+                </div>
+                <div class="row g-4">
+                    <!-- Eficiência Operacional -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/eficiencia.png" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Eficiência operacional</a>
+                                <p class="mb-4">Consultores em gestão de processos podem analisar e otimizar as operações internas da sua empresa.</p>
+                                <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#eficienciaModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Redução de Custos -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/reduzircustos.png" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Redução de custos</a>
+                                <p class="mb-4">Processos eficientes fornecem informações rápidas e precisas, facilitando decisões baseadas em dados e análises.</p>
+                                <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#custosModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tecnologias Inovadoras -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/inovacao.png" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Tecnologias inovadoras</a>
+                                <p class="mb-4">Consultores em gestão de processos analisam e otimizam operações internas, identificando ineficiências e propondo melhorias.</p>
+                                <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#tecnologiasModal">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modais -->
+            <!-- Modal Eficiência Operacional -->
+            <div class="modal fade" id="eficienciaModal" tabindex="-1" aria-labelledby="eficienciaModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="eficienciaModalLabel">Eficiência operacional</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3 style="margin-left: 20px; margin-right: 20px;">Eficiência operacional</h3> <p style="margin-left: 20px; margin-right: 20px;">Consultores especializados podem identificar gargalos, reduzir atrasos e implementar soluções para maximizar a produtividade da sua equipe. Além disso, eles podem ajudar a padronizar processos, melhorar a comunicação interna e garantir que os recursos sejam utilizados de maneira eficiente.</p> <p style="margin-left: 20px; margin-right: 20px;">Com uma análise detalhada das operações, é possível identificar áreas de melhoria e implementar práticas recomendadas que aumentam a eficiência e reduzem custos. Isso resulta em uma equipe mais produtiva e em um ambiente de trabalho mais organizado e eficaz.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Redução de Custos -->
+            <div class="modal fade" id="custosModal" tabindex="-1" aria-labelledby="custosModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="custosModalLabel">Redução de custos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3 style="margin-left: 20px; margin-right: 20px;">Redução de custos</h3> <p style="margin-left: 20px; margin-right: 20px;">Processos eficientes fornecem informações rápidas e precisas, facilitando decisões baseadas em dados e análises. Com processos bem definidos e o uso de tecnologia, é possível reduzir custos operacionais, otimizando recursos e aumentando a margem de lucro. Além disso, a automação de tarefas repetitivas pode liberar a equipe para se concentrar em atividades mais estratégicas, aumentando a produtividade e a eficiência geral.</p> <p style="margin-left: 20px; margin-right: 20px;">A implementação de soluções tecnológicas também pode ajudar a identificar áreas de desperdício e oportunidades de economia, permitindo uma gestão financeira mais eficaz. Com uma abordagem baseada em dados, as empresas podem tomar decisões mais informadas e estratégicas, garantindo um crescimento sustentável e uma melhor alocação de recursos.</p> <img src="image1.jpg" alt="Redução de Custos" style="margin-left: 20px; margin-right: 20px;">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Tecnologias Inovadoras -->
+            <div class="modal fade" id="tecnologiasModal" tabindex="-1" aria-labelledby="tecnologiasModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tecnologiasModalLabel">Tecnologias inovadoras</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3 style="margin-left: 20px; margin-right: 20px;">Tecnologias inovadoras</h3> <p style="margin-left: 20px; margin-right: 20px;">Consultores em gestão de processos analisam e otimizam operações internas, identificando ineficiências e propondo melhorias. Adotar tecnologias de ponta pode revolucionar a forma como sua empresa opera, promovendo inovação e aumentando sua competitividade no mercado. Com a implementação de soluções tecnológicas avançadas, é possível melhorar a comunicação, a colaboração e a eficiência operacional.</p> <p style="margin-left: 20px; margin-right: 20px;">Além disso, a utilização de ferramentas de automação e inteligência artificial pode transformar processos complexos em operações simples e eficientes. Isso não só reduz o tempo e os custos associados a tarefas manuais, mas também melhora a precisão e a qualidade dos resultados. A inovação tecnológica permite que as empresas se adaptem rapidamente às mudanças do mercado e se mantenham à frente da concorrência.</p> <img src="image2.jpg" alt="Tecnologias Inovadoras" style="margin-left: 20px; margin-right: 20px;">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+
+        <!-- Testimonial Start
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+                    <h1 class="display-5 mb-4">Our Clients Riviews</h1>
+                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                    </p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis blanditiis excepturi quisquam temporibus voluptatum reprehenderit culpa, quasi corrupti laborum accusamus.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis blanditiis excepturi quisquam temporibus voluptatum reprehenderit culpa, quasi corrupti laborum accusamus.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis blanditiis excepturi quisquam temporibus voluptatum reprehenderit culpa, quasi corrupti laborum accusamus.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis blanditiis excepturi quisquam temporibus voluptatum reprehenderit culpa, quasi corrupti laborum accusamus.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      Testimonial End -->
+
+         <!-- Footer Start -->
+         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgba(12, 12, 12, 0.08);">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">                                                              
+                                   <h5 class="text-white custom-logo mb-4">
+                                        <img src="img/MergeBranca.png" alt="Logo Merge" class="align-middle" style="max-height: 60px;">
+                                    </h5>
+                            
+                            </a>
+                            <p class="mb-4">Na Merge Solutions, somos especialistas em automação e consultoria, oferecendo soluções inovadoras para otimizar processos e impulsionar o crescimento do seu negócio.</p>
+                            <div class="d-flex">                                
+                                <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
+                                    <i class="fas fa-play text-primary"></i>
+                                    <div class="ms-3">
+                                        <small class="text-white">Obtenha no</small>
+                                        <h6 class="text-white">Google Play</h6>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-2">
+                                <div class="footer-item">
+                                    <h4 class="text-white mb-4">Links Rápidos</h4>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Sobre Nós</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Consultoria</a>
+                                    <a href="service.html"><i class="fas fa-angle-right me-2"></i> Serviços</a>
+                                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contato</a>                                  
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-3">
+                                <div class="footer-item">
+                                    <h4 class="text-white mb-4">Suporte</h4>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Política de Privacidade</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Termos e Condições</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Aviso Legal</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Suporte</a>
+                                    <a href="#frequentes"><i class="fas fa-angle-right me-2"></i> Perguntas Frequentes</a>                                  
+                                </div>
+                            
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item ">
+                            <h4 class="text-white mb-4">Entre em contato</h4>                            
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">sheilatirony@kssolutions.tech</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">(+55) 71 99125-5018</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fab fa-firefox-browser text-primary me-3"></i>
+                                <p class="text-white mb-0">http://mergeti.com.br/</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-12 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Merge.ti</a>, All right reserved.</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="js/libras.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script> 
+        
+        
+            <script src="js/script.js"></script>
+            
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
