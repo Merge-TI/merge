@@ -180,3 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     changeSlide(0);
 });
+
+
+/*Modal video closed*/
+

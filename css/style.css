@@ -2158,3 +2158,19 @@ background: white;
 }
 
 
+/*Modal Vídeo*/
+/* Estilos adicionais para melhorar o visual */
+    #videoModal .modal-content {
+        border: 1px solid #444; /* Borda sutil */
+    }
+    
+    #videoModal .modal-header {
+        border-bottom: 1px solid #444; /* Borda de separação */
+    }
+    
+    #videoModal .modal-footer {
+        border-top: 1px solid #444; /* Borda de separação */
+    }
+#videoModalLabel{
+   color: #fff;
+}
