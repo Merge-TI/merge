@@ -62,7 +62,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">Sobre</a>
                         <a href="service.html" class="nav-item nav-link">Serviços</a>
                         <a href="contact.html" class="nav-item nav-link">Contato</a>
@@ -87,7 +87,7 @@
                             <div class="row g-5">
                                 <div class="col-12 animated fadeInUp">
                                     <div class="text-center">
-                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Descubra a Transformação</h4>
+                                        <h4 class="text-white text-uppercase fw-bold mb-4">Descubra a Transformação</h4>
                                         <h1 class="display-4 text-uppercase text-white mb-4">Consultoria em Gestão de Processos e Automação Robótica</h1>
                                         <p class="mb-5 fs-5">Potencialize a eficiência operacional, reduza custos e leve sua empresa para o proximo nível tecnológico. 
                                         </p>
@@ -95,7 +95,9 @@
                                           <button class="btn btn-primary rounded-pill py-3 px-5" data-bs-toggle="modal" data-bs-target="#videoModal">
                                                     Assista Vídeo
                                             </button>
-                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Saiba Mais</a>
+                                            <button onclick="window.location.href='https://wa.me/557121371247'" class="btn btn-primary rounded-pill py-3 px-5">
+    Saiba Mais
+</button>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center">
                                             <h2 class="text-white me-2"></h2>
@@ -115,69 +117,105 @@
             </div>
             <!-- Carousel End -->
           <!--Descubra Transformação-->
-          <div class="container py-0">
-            <div class="row g-3 align-items-center">
-                <div class="wow fadeInLeft" data-wow-delay="0.2s">
-                <h1 class= "consultoria">Descubra a consultoria</h1>
-                <br>
+          
+     <div class="container py-5">
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <h1 class="consultoria-title">Descubra a consultoria</h1>
+        </div>
+    </div>
+    
+    <!-- VERSÃO DESKTOP (layout da imagem) -->
+    <div class="d-none d-lg-block">
+        <div class="row">
+            <div class="col-12">
+                <div class="tab-buttons d-flex justify-content-center flex-wrap mb-4">
+                    <button class="custom-button active" onclick="showDesktopContent('gestaoDeProjetos')">Gestão de projetos</button>
+                    <button class="custom-button" onclick="showDesktopContent('implantacaoERP')">Implantação ERP</button>
+                    <button class="custom-button" onclick="showDesktopContent('roboAnalise')">Robô, análise e implantação</button>
                 </div>
             </div>
-         </div>
+        </div>
         
-        </div>       
-         <section class="topo-do-site">
-             
- 
-           
-          
-                 <div class="container-slide--info">
-                     
-                     <div class="button-container-card">
-                         <button class="custom-button active" onclick="showContent('gestaoDeProjetos')">Gestão de projetos</button>
-                         <button class="custom-button " onclick="showContent('implantacaoERP')">Implantação ERP</button>
-                         <button class="custom-button " onclick="showContent('roboAnalise')">Robô, análise e implantação</button>
-                     </div>                   
-                     <div id="gestaoDeProjetos" class="tabcontent">
-                         
-                      
-                         <div class="content-text">
-                             <h2>Gestão de projetos</h2>
-                             <h1>Rumo à excelência na organização empresarial: Otimizando fluxos e desempenho</h1>
-                             <p>Transforme a maneira como sua empresa opera com nossos serviços especializados em Gestão de Processos. Nossa abordagem personalizada visa otimizar cada aspecto das operações, desde a análise até a implementação, garantindo eficiência e agilidade.</p>
-                         </div>
-                         <img src="img/gestaoProjetos.jpg" alt="Gestão de Projetos" class="content-image">
-                       
-                     </div>
-             
-                     <div id="implantacaoERP" class="tabcontent">
-                         
-                         <div class="content-text">
-                             <h2>Implantação ERP e Robô</h2>
-                             <h1 >Automatizando a gestão empresarial: Inovação com ERP e soluções robóticas</h1>
-                             <p>Oferecemos serviços especializados para impulsionar seu negócio, combinando implantação de ERP e automação robótica. Transforme processos, ganhe agilidade e alcance novos patamares de eficiência com nossa expertise. Potencialize seu sucesso com soluções inovadoras e personalizadas</p>
-                         </div>
-                         <img src="img/erp.gif" alt="Implantação ERP" class="content-image">
-                     </div>
-             
-                     <div id="roboAnalise" class="tabcontent">
-                         <div class="content-text">
-                             <h2>Robô, análise e implantação</h2>
-                             <h1>Soluções de automação para o futuro</h1>
-                             <p>Implemente robôs de última geração para transformar seus processos empresariais. Nossa equipe especializada oferece análise detalhada e implantação de soluções robóticas para aumentar a eficiência e reduzir custos.</p>
-                         </div>
-                         <img src="img/analise.gif"alt="Robô, Análise e Implantação" class="content-image">
-                     </div>
-                 </div>
-                 
- 
- 
-             </div>
-             
-         </section>
-
-
-
-
+        <!-- Conteúdo Desktop -->
+        <div id="gestaoDeProjetos" class="desktop-tabcontent active">
+            <div class="desktop-content-box">
+                <div class="desktop-text">
+                    <h2>Gestão de projetos</h2>
+                    <h1>Rumo à excelência na organização empresarial: <strong>Otimizando fluxos e desempenho</strong></h1>
+                    <p>Transforme a maneira como sua empresa opera com nossos serviços especializados em Gestão de Processos. Nossa abordagem personalizada visa otimizar cada aspecto das operações, desde a análise até a implementação, garantindo eficiência e agilidade.</p>
+                </div>
+                <img src="img/gestaoProjetos.jpg" alt="Gestão de Projetos" class="desktop-image">
+            </div>
+        </div>
+        
+        <div id="implantacaoERP" class="desktop-tabcontent">
+            <div class="desktop-content-box">
+                <div class="desktop-text">
+                    <h2>Implantação ERP</h2>
+                    <h1>Automatizando a gestão empresarial: <strong>Inovação com ERP e soluções robóticas</strong></h1>
+                    <p>Oferecemos serviços especializados para impulsionar seu negócio, combinando implantação de ERP e automação robótica. Transforme processos, ganhe agilidade e alcance novos patamares de eficiência com nossa expertise.</p>
+                </div>
+                <img src="img/ImplantaERPeRobo.png" alt="Implantação ERP" class="desktop-image">
+            </div>
+        </div>
+        
+        <div id="roboAnalise" class="desktop-tabcontent">
+            <div class="desktop-content-box">
+                <div class="desktop-text">
+                    <h2>Robô, análise e implantação</h2>
+                    <h1>Soluções de automação para o futuro: <strong>Eficiência e redução de custos</strong></h1>
+                    <p>Implemente robôs de última geração para transformar seus processos empresariais. Nossa equipe especializada oferece análise detalhada e implantação de soluções robóticas para aumentar a eficiência e reduzir custos.</p>
+                </div>
+                <img src="img/Roboanaliseeimplantacao.png" alt="Robô, Análise e Implantação" class="desktop-image">
+            </div>
+        </div>
+    </div>
+    
+    <!-- VERSÃO MOBILE/TABLET (CÓDIGO ORIGINAL DOS CARDS) -->
+    <div class="d-lg-none">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-12 mb-4">
+                <div class="service-card">
+                    <img src="img/gestaoProjetos.jpg" alt="Gestão de Projetos" class="card-img-top">
+                    <div class="card-body">
+                        <h3>Gestão de projetos</h3>
+                        <h4>Rumo à excelência na organização empresarial</h4>
+                        <p>Transforme a maneira como sua empresa opera com nossos serviços especializados em Gestão de Processos.</p>
+                        <button class="satha-button">Satha Mais</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col-md-6 col-12 mb-4">
+                <div class="service-card">
+                    <img src="img/ImplantaERPeRobo.png" alt="Implantação ERP" class="card-img-top">
+                    <div class="card-body">
+                        <h3>Implantação ERP e Robô</h3>
+                        <h4>Automatizando a gestão empresarial</h4>
+                        <p>Oferecemos serviços especializados para impulsionar seu negócio, combinando implantação de ERP e automação robótica.</p>
+                        <button class="satha-button">Satha Mais</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="col-md-6 col-12 mb-4">
+                <div class="service-card">
+                    <img src="img/Roboanaliseeimplantacao.png" alt="Robô, Análise e Implantação" class="card-img-top">
+                    <div class="card-body">
+                        <h3>Robô, análise e implantação</h3>
+                        <h4>Soluções de automação para o futuro</h4>
+                        <p>Implemente robôs de última geração para transformar seus processos empresariais.</p>
+                        <button class="satha-button">Satha Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
         <!-- Navbar & Hero End -->
@@ -212,8 +250,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <a href="#" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Whatsapp</a>
+                               <div class="col-sm-6" data-relingo-block="true">
+                                    <a href="https://wa.me/557121371247" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Whatsapp</a>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="d-flex">
@@ -263,7 +301,7 @@
                             <div class="rounded-bottom p-4">
                                 <a href="#" class="h4 d-inline-block mb-4">RPA é uma tecnologia que utiliza “bots” para automatizar tarefas.</a>
                                 <p class="mb-4">Esses bots podem executar diversas atividades, desde o processamento de dados até a gestão de interações com clientes.</p>
-                                <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#rpaModal">Saiba Mais</button>
+                               <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#rpaModal">Saiba Mais</button>
                             </div>
                         </div>
                     </div>
@@ -318,18 +356,11 @@
                             
                             Economia de Tempo: Tarefas que antes levavam horas podem ser concluídas em minutos, aumentando a produtividade geral.
                             
-                            Exemplos de Aplicações:
-                            Financeiro: Automação de processos de contas a pagar e a receber, reconciliação bancária e geração de relatórios financeiros.
-                            
-                            Recursos Humanos: Gestão de folha de pagamento, recrutamento e integração de novos funcionários.
-                            
-                            Atendimento ao Cliente: Respostas automáticas a consultas comuns, processamento de pedidos e gestão de devoluções.
-                            
-                            TI: Monitoramento de sistemas, gestão de tickets de suporte e automação de backups.</p>
+                          </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        <a href="https://wa.me/557121371247" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
             </div>
@@ -348,7 +379,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                        <a href="#" class="btn btn-primary">Entrar em Contato</a>
+                        <a href="https://wa.me/557121371247" class="btn btn-primary">Entrar em Contato</a>
                     </div>
                 </div>
             </div>
@@ -368,7 +399,7 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        <a href="https://wa.me/557121371247" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
             </div>
@@ -436,7 +467,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            <a href="https://wa.me/557121371247" class="btn btn-primary">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -451,11 +482,11 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <h3 style="margin-left: 20px; margin-right: 20px;">Redução de custos</h3> <p style="margin-left: 20px; margin-right: 20px;">Processos eficientes fornecem informações rápidas e precisas, facilitando decisões baseadas em dados e análises. Com processos bem definidos e o uso de tecnologia, é possível reduzir custos operacionais, otimizando recursos e aumentando a margem de lucro. Além disso, a automação de tarefas repetitivas pode liberar a equipe para se concentrar em atividades mais estratégicas, aumentando a produtividade e a eficiência geral.</p> <p style="margin-left: 20px; margin-right: 20px;">A implementação de soluções tecnológicas também pode ajudar a identificar áreas de desperdício e oportunidades de economia, permitindo uma gestão financeira mais eficaz. Com uma abordagem baseada em dados, as empresas podem tomar decisões mais informadas e estratégicas, garantindo um crescimento sustentável e uma melhor alocação de recursos.</p> <img src="image1.jpg" alt="Redução de Custos" style="margin-left: 20px; margin-right: 20px;">
+                            <h3 style="margin-left: 20px; margin-right: 20px;">Redução de custos</h3> <p style="margin-left: 20px; margin-right: 20px;">Processos eficientes fornecem informações rápidas e precisas, facilitando decisões baseadas em dados e análises. Com processos bem definidos e o uso de tecnologia, é possível reduzir custos operacionais, otimizando recursos e aumentando a margem de lucro. Além disso, a automação de tarefas repetitivas pode liberar a equipe para se concentrar em atividades mais estratégicas, aumentando a produtividade e a eficiência geral.</p> <p style="margin-left: 20px; margin-right: 20px;">A implementação de soluções tecnológicas também pode ajudar a identificar áreas de desperdício e oportunidades de economia, permitindo uma gestão financeira mais eficaz. Com uma abordagem baseada em dados, as empresas podem tomar decisões mais informadas e estratégicas, garantindo um crescimento sustentável e uma melhor alocação de recursos.</p> 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            <a href="https://wa.me/557121371247" class="btn btn-primary">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -470,7 +501,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <h3 style="margin-left: 20px; margin-right: 20px;">Tecnologias inovadoras</h3> <p style="margin-left: 20px; margin-right: 20px;">Consultores em gestão de processos analisam e otimizam operações internas, identificando ineficiências e propondo melhorias. Adotar tecnologias de ponta pode revolucionar a forma como sua empresa opera, promovendo inovação e aumentando sua competitividade no mercado. Com a implementação de soluções tecnológicas avançadas, é possível melhorar a comunicação, a colaboração e a eficiência operacional.</p> <p style="margin-left: 20px; margin-right: 20px;">Além disso, a utilização de ferramentas de automação e inteligência artificial pode transformar processos complexos em operações simples e eficientes. Isso não só reduz o tempo e os custos associados a tarefas manuais, mas também melhora a precisão e a qualidade dos resultados. A inovação tecnológica permite que as empresas se adaptem rapidamente às mudanças do mercado e se mantenham à frente da concorrência.</p> <img src="image2.jpg" alt="Tecnologias Inovadoras" style="margin-left: 20px; margin-right: 20px;">
+                            <h3 style="margin-left: 20px; margin-right: 20px;">Tecnologias inovadoras</h3> <p style="margin-left: 20px; margin-right: 20px;">Consultores em gestão de processos analisam e otimizam operações internas, identificando ineficiências e propondo melhorias. Adotar tecnologias de ponta pode revolucionar a forma como sua empresa opera, promovendo inovação e aumentando sua competitividade no mercado. Com a implementação de soluções tecnológicas avançadas, é possível melhorar a comunicação, a colaboração e a eficiência operacional.</p> <p style="margin-left: 20px; margin-right: 20px;">Além disso, a utilização de ferramentas de automação e inteligência artificial pode transformar processos complexos em operações simples e eficientes. Isso não só reduz o tempo e os custos associados a tarefas manuais, mas também melhora a precisão e a qualidade dos resultados. A inovação tecnológica permite que as empresas se adaptem rapidamente às mudanças do mercado e se mantenham à frente da concorrência.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
@@ -784,7 +815,7 @@
                     </div>
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="bg-primary rounded">
-                            <img src="img/about-2.png" class="img-fluid w-100" alt="">
+                            <img src="img/Fac.png" class="img-fluid w-100" alt="">
                         </div>
                     </div>
                 </div>
@@ -882,7 +913,7 @@
             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                 <div class="team-item">
                     <div class="team-img">
-                        <img src="img/Hugo.jpg" class="img-fluid" alt="">
+                        <img src="img/HugoAndrade.png" class="img-fluid" alt="">
                     </div>
                     <div class="team-title">
                         <h4 class="mb-0">Hugo</h4>

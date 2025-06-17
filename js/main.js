@@ -184,3 +184,96 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /*Modal video closed*/
 
+ function showContent(tabId) {
+            // Esconde todos os conteúdos
+            document.querySelectorAll('.tabcontent').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove a classe active de todos os botões
+            document.querySelectorAll('.custom-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Mostra o conteúdo selecionado
+            document.getElementById(tabId).classList.add('active');
+            
+            // Adiciona a classe active ao botão clicado
+            event.currentTarget.classList.add('active');
+        }
+
+
+          // Mantém a função original para desktop
+// Função para desktop
+    function showContent(contentId) {
+        const contents = document.querySelectorAll('.tabcontent');
+        contents.forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        const buttons = document.querySelectorAll('.custom-button');
+        buttons.forEach(button => {
+            button.classList.remove('active');
+        });
+        
+        document.getElementById(contentId).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+    
+    // Funções para mobile/tablet
+    function showMobileContent(contentId) {
+        // Esconde todos os cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.style.display = 'none';
+        });
+        
+        // Mostra o conteúdo expandido
+        document.getElementById('mobileExpandedContent').style.display = 'block';
+        
+        // Preenche o conteúdo correspondente
+        const contentMap = {
+            'gestaoDeProjetos': {
+                title: 'Gestão de projetos',
+                subtitle: 'Rumo à excelência na organização empresarial: Otimizando fluxos e desempenho',
+                content: 'Transforme a maneira como sua empresa opera com nossos serviços especializados em Gestão de Processos. Nossa abordagem personalizada visa otimizar cada aspecto das operações, desde a análise até a implementação, garantindo eficiência e agilidade.'
+            },
+            'implantacaoERP': {
+                title: 'Implantaçao ERP',
+                subtitle: 'Automatizando a gestão empresarial: Inovação com ERP e soluções robóticas',
+                content: 'Oferecemos serviços especializados para impulsionar seu negócio, combinando implantação de ERP e automação robótica. Transforme processos, ganhe agilidade e alcance novos patamares de eficiência com nossa expertise.'
+            },
+            'roboAnalise': {
+                title: 'Robô, análise e implantação',
+                subtitle: 'Soluções de automação para o futuro: Eficiência e redução de custos',
+                content: 'Implemente robôs de última geração para transformar seus processos empresariais. Nossa equipe especializada oferece análise detalhada e implantação de soluções robóticas para aumentar a eficiência e reduzir custos.'
+            }
+        };
+        
+        const content = contentMap[contentId];
+        const targetElement = document.getElementById(`mobile${contentId.charAt(0).toUpperCase() + contentId.slice(1)}`);
+        
+        targetElement.innerHTML = `
+            <h2>${content.title}</h2>
+            <h3>${content.subtitle}</h3>
+            <p>${content.content}</p>
+        `;
+    }
+    
+    // Função para desktop
+    function showDesktopContent(contentId) {
+        // Esconde todos os conteúdos
+        document.querySelectorAll('.desktop-tabcontent').forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        // Remove classe active de todos os botões
+        document.querySelectorAll('.custom-button').forEach(button => {
+            button.classList.remove('active');
+        });
+        
+        // Mostra o conteúdo selecionado
+        document.getElementById(contentId).classList.add('active');
+        
+        // Adiciona active ao botão clicado
+        event.currentTarget.classList.add('active');
+    }
