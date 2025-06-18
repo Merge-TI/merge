@@ -1,4 +1,49 @@
 
+
+/*Fontes Principais */
+
+:root {
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 700; /* Bold */
+}
+
+.subtitle {
+    font-family: var(--font-primary);
+    font-weight: 600; /* SemiBold */
+}
+
+/* Ajuste específico para elementos que usam outras fontes */
+.navbar-light .navbar-nav .nav-link {
+    font-family: var(--font-primary);
+    /* mantém outros estilos */
+}
+
+.heading, .title-WhatWeDo {
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+/* Ajuste para cards e outros elementos */
+.service-card h2, .service-card h3 {
+    font-family: var(--font-primary);
+}
+
+.service-card p, .content-text p {
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+
+
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
@@ -2486,3 +2531,101 @@ body {
             font-size: 1.3rem;
         }
     }
+/* Centraliza em telas menores, ex: 528px */
+@media (max-width: 768px) {
+  .Heading-ideiaMobile img  {
+    height: auto;
+    }
+}
+
+/*Responsividade modificada , se de ruim depois, retirar ...*/
+/* Media Query para tablets e dispositivos com resolução 1024x1366 */
+@media (max-width: 1366px) and (orientation: portrait),
+       (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  
+  /* Ajustes para os cards "O que fazemos" */
+  .card-WhatWeDo {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .Heading-ideiaMobile {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .Heading-ideiaMobile img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Ajustes para os artigos */
+  .articles {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding-inline: 20px;
+  }
+  
+  article h2 {
+    font-size: 1.7rem;
+  }
+  
+  .article-body {
+    padding: 20px;
+  }
+  
+  /* Ajustes para o título */
+  .title-WhatWeDo {
+    font-size: 3.0rem;
+    padding: 1rem 0;
+  }
+  
+  /* Ajustes para botões */
+  .myButton {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+  
+  /* Ajustes para o texto mobile */
+  .mobile-info {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Ajustes para o layout VMM */
+  .container-VMM {
+    max-width: 90%;
+  }
+  
+  .txt--VMM h1 {
+    font-size: 2.5rem;
+  }
+  
+  .txt--VMM p {
+    font-size: 1.8rem;
+  }
+  
+  .container-img--VMM {
+    width: 25rem;
+  }
+}
+
+/* Ajustes específicos para orientação paisagem em 1024x1366 */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .articles {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+  
+  .Heading-ideiaMobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .Heading-ideiaMobile > div {
+    margin-bottom: 0;
+  }
+}

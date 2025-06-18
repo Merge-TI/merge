@@ -277,3 +277,29 @@ document.addEventListener('DOMContentLoaded', function () {
         // Adiciona active ao botão clicado
         event.currentTarget.classList.add('active');
     }
+
+
+    /* Elementos para o player de vídeo */
+
+     // Captura os elementos
+    const videoModal = document.getElementById('videoModal');
+    const localVideo = document.getElementById('localVideo');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    
+    // Pausa o vídeo quando o modal é fechado
+    videoModal.addEventListener('hidden.bs.modal', function () {
+        localVideo.pause();
+        localVideo.currentTime = 0; // Opcional: reinicia o vídeo
+    });
+    
+    // Alternativa: pausa também quando clica no botão Fechar
+    closeModalBtn.addEventListener('click', function() {
+        localVideo.pause();
+        localVideo.currentTime = 0; // Opcional: reinicia o vídeo
+    });
+    
+    // Opcional: pausa quando clica no X do cabeçalho
+    document.querySelector('.btn-close').addEventListener('click', function() {
+        localVideo.pause();
+        localVideo.currentTime = 0;
+    });
