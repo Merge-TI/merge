@@ -117,8 +117,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn.btn-primary:hover {
-    background: var(--bs-white);
-    color: var(--bs-primary);
+    background:hsl(234, 83%, 41%);
+    color: var(--bs-white);
 }
 
 .btn.btn-light {
@@ -2227,7 +2227,13 @@ body {
             color: #333;
             line-height: 1.6;
         }
+
+
+           .corclarop {           
+            color: #949494;           
+        }
         
+
         .consultoria-title {
             font-weight: 700;
             color: #2c3e50;
