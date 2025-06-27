@@ -771,7 +771,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .team .team-item:hover .team-icon a:hover {
     color: var(--bs-primary);
-    background: var(--bs-dark);
+    background: var(--bs-white);
 }
 /*** Team End ***/
 
